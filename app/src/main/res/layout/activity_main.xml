@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fondo_android"
+    tools:context=".MainActivity">
+    <ImageView
+        android:id="@+id/logomastercine"
+        android:layout_width="412dp"
+        android:layout_height="296dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+    <EditText
+        android:id="@+id/edtCorreo"
+        android:layout_width="370dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/border"
+        android:hint="Correo electronico"
+        android:paddingStart="20dp"
+        android:textColor="#000000"
+        android:textCursorDrawable="@null"
+        android:textColorHint="#98A2B3"
+        android:textStyle="italic"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logomastercine"
+        tools:ignore="TouchTargetSizeCheck" />
+    <EditText
+        android:id="@+id/edtPassword"
+        android:layout_width="372dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/border"
+        android:hint="Contraseña"
+        android:inputType="textPassword"
+        android:paddingStart="20dp"
+        android:textColor="#000000"
+        android:textColorHint="#98A2B3"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtCorreo"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/btnIngresar"
+        android:layout_width="322dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/border_button_ingresar"
+        android:text="Iniciar sesión"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtPassword"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="322dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/border_button_register"
+        android:text="Crear cuenta nueva"
+        android:textAllCaps="false"
+        android:textColor="#1A8FDD"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnIngresar"
+        app:layout_constraintVertical_bias="0.482"
+        tools:ignore="TouchTargetSizeCheck" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
