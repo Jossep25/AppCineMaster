@@ -1,13 +1,13 @@
 {
   "project_info": {
-    "project_number": "482444259114",
-    "project_id": "appmastercine",
-    "storage_bucket": "appmastercine.appspot.com"
+    "project_number": "927717436937",
+    "project_id": "appmastercine-331ec",
+    "storage_bucket": "appmastercine-331ec.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:482444259114:android:edb0e7884a2afdb8cdb853",
+        "mobilesdk_app_id": "1:927717436937:android:d7607aed942a9417a592d8",
         "android_client_info": {
           "package_name": "pe.edu.idat.appmastercine"
         }
@@ -15,7 +15,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyBRO9v9-U5A4SF2P8Zz65TF1aAKdFd627o"
+          "current_key": "AIzaSyCrzfz2MMQZsxSX3Dbgl9gFf5NARGWgXDI"
         }
       ],
       "services": {
