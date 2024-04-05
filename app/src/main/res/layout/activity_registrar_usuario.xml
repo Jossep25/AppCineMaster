@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/fondo_android"
     tools:context=".RegistrarUsuario">
     <ImageView
         android:id="@+id/logomastercine"
@@ -111,6 +110,7 @@
         android:text="Regitrar"
         android:textAllCaps="false"
         android:textSize="18sp"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/edtFecha"
