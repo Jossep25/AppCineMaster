@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity() {
             val email = binding.edtCorreo.text.toString()
             val password = binding.edtPassword.text.toString()
             if (email.isNotEmpty() && password.isNotEmpty()) {
-                startActivity(Intent(this, MenuPrincipal::class.java))
+                startActivity(Intent(this, NavDrawerActivity::class.java))
             } else {
                 Toast.makeText(this, "Por favor llena todos los campos", Toast.LENGTH_SHORT).show()
             }
