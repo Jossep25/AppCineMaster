@@ -5,83 +5,104 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="40dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="40dp" />
+
     <ImageView
         android:id="@+id/logomastercine"
-        android:layout_width="412dp"
-        android:layout_height="296dp"
-        android:layout_marginTop="4dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="333dp"
+        android:layout_height="281dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/logo" />
-    <EditText
-        android:id="@+id/edtCorreo"
-        android:layout_width="370dp"
-        android:layout_height="42dp"
-        android:layout_marginTop="24dp"
-        android:background="@drawable/border"
-        android:hint="Correo electronico"
-        android:paddingStart="20dp"
-        android:textColor="#000000"
-        android:textCursorDrawable="@null"
-        android:textColorHint="#98A2B3"
-        android:textStyle="italic"
-        android:inputType="text"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.487"
-        app:layout_constraintStart_toStartOf="parent"
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
         app:layout_constraintTop_toBottomOf="@+id/logomastercine"
-        tools:ignore="TouchTargetSizeCheck" />
-    <EditText
-        android:id="@+id/edtPassword"
-        android:layout_width="372dp"
-        android:layout_height="42dp"
-        android:layout_marginTop="20dp"
-        android:background="@drawable/border"
-        android:hint="Contraseña"
-        android:inputType="textPassword"
-        android:paddingStart="20dp"
-        android:textColor="#000000"
-        android:textColorHint="#98A2B3"
-        android:textStyle="italic"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.487"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edtCorreo"
-        tools:ignore="TouchTargetSizeCheck" />
+        app:layout_constraintVertical_bias="0.5">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtCorreo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/border"
+            android:hint="@string/val_correo"
+            android:maxWidth="200dp"
+            android:paddingStart="20dp"
+            android:textStyle="italic"
+            tools:ignore="TouchTargetSizeCheck" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout"
+        app:passwordToggleEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edtPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/border"
+            android:hint="@string/val_contra"
+            android:inputType="text|textPassword"
+            android:paddingStart="20dp"
+            android:textStyle="italic"
+            tools:ignore="TouchTargetSizeCheck" />
+
+    </com.google.android.material.textfield.TextInputLayout>
 
     <Button
         android:id="@+id/btnIngresar"
-        android:layout_width="322dp"
-        android:layout_height="42dp"
-        android:layout_marginTop="20dp"
-        android:background="@drawable/border_button_ingresar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
         android:text="Iniciar sesión"
         android:textAllCaps="false"
-        android:textSize="18sp"
         android:textColor="@color/white"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edtPassword"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout2"
         tools:ignore="TouchTargetSizeCheck" />
 
     <Button
         android:id="@+id/btnRegister"
-        android:layout_width="322dp"
-        android:layout_height="42dp"
-        android:layout_marginTop="60dp"
-        android:background="@drawable/border_button_register"
-        android:text="Crear cuenta nueva"
-        android:textAllCaps="false"
-        android:textColor="#1A8FDD"
-        android:textSize="18sp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/val_regis"
+        android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.505"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
         app:layout_constraintTop_toBottomOf="@+id/btnIngresar"
-        app:layout_constraintVertical_bias="0.482"
-        tools:ignore="TouchTargetSizeCheck" />
+        app:layout_constraintVertical_bias="0.641"
+        style="@style/OutlinedButtonCustom"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

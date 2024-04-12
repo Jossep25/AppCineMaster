@@ -60,4 +60,9 @@ dependencies {
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
     //firebase
     implementation ("com.google.firebase:firebase-auth:20.0.4")
+    //Room
+    implementation("androidx.room:room-runtime:2.6.1")
+    annotationProcessor("androidx.room:room-compiler:2.6.1")
+    implementation("androidx.room:room-ktx:2.6.1")
+    testImplementation("androidx.room:room-testing:2.6.1")
 }

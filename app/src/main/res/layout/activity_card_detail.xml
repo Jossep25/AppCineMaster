@@ -148,6 +148,7 @@
                 android:layout_below="@id/txtClasificacion"
                 android:layout_centerHorizontal="true"
                 android:layout_marginTop="90dp"
+                android:textColor="@color/white"
                 android:background="@drawable/border_button_ingresar"
                 android:text="Comprar"
                 android:textAllCaps="false"

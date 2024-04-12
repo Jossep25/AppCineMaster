@@ -1,21 +1,13 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Base.Theme.AppMasterCine" parent="Theme.MaterialComponents.Light.DarkActionBar">
+    <style name="Base.Theme.AppMasterCine" parent="Theme.Material3.DayNight.NoActionBar">
         <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
     </style>
-
     <style name="Theme.AppMasterCine" parent="Base.Theme.AppMasterCine" />
-
-    <style name="NoActionBar">
-        <item name="windowActionBar">false</item>
-        <item name="windowNoTitle">true</item>
+    <style name="OutlinedButtonCustom" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="strokeColor">@color/colorPrimary</item>
     </style>
 
-    <style name="AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
-
-    <style name="PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
     <style name="AppTheme.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>

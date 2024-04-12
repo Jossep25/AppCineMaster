@@ -12,4 +12,15 @@
     <string name="open_nav">Open Navigation Drawer</string>
     <string name="close_nav">Close Navigation Drawer</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="val_contra">Contraseña</string>
+    <string name="val_correo">Correo electronico</string>
+    <string name="val_login">Inciar sesión</string>
+    <string name="val_regis">Crear cuenta nueva</string>
+    <string name="val_nombre">Nombres</string>
+    <string name="val_dni">Doc. Identidad</string>
+    <string name="val_fecha">Fech. Nacimiento</string>
+    <string name="val_telef">Numero de celular</string>
+    <string name="val_email">Correo electronico</string>
+    <string name="val_cancel">Cancelar</string>
+    <string name="val_regi">Crear cuenta</string>
 </resources>

@@ -30,17 +30,4 @@ class MainActivity : AppCompatActivity() {
             startActivity(Intent(this, RegistrarUsuario::class.java))
         }
     }
-    private fun IngresarApp(email: String, password: String) {
-        FirebaseAuth.getInstance().signInWithEmailAndPassword(email, password)
-            .addOnCompleteListener(this) { task ->
-                if (task.isSuccessful) {
-                    Log.d(TAG, "signInWithEmail:success")
-                    val user = FirebaseAuth.getInstance().currentUser
-                    startActivity(Intent(this, MenuPrincipal::class.java))
-                } else {
-                    Log.w(TAG, "signInWithEmail:failure", task.exception)
-                    Toast.makeText(baseContext, "Autenticación fallida.", Toast.LENGTH_SHORT).show()
-                }
-            }
-    }
 }
