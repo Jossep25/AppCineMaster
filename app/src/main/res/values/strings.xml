@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">AppMasterCine</string>
+    <string name="app_name">MasterCine</string>
     <string name="val_nombrepelicula">NombrePelicula</string>
     <string name="title_activity_menu_principal">MenuPrincipal</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
