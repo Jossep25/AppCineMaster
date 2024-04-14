@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Parcelable
 import android.view.View
+import android.widget.ImageButton
 import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
@@ -16,7 +17,10 @@ class CardDetailActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_card_detail)
-
+        val ibRegresar: ImageButton = findViewById(R.id.ibRegresar)
+        ibRegresar.setOnClickListener {
+            finish()
+        }
         val pelicula: Pelicula = intent.getParcelableExtra("pelicula")!!
         findViewById<TextView>(R.id.textViewDescription).text = pelicula.sinopsis
         findViewById<TextView>(R.id.textViewCo2).text = pelicula.pais
