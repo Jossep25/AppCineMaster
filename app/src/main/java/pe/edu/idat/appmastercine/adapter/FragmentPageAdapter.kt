@@ -4,8 +4,7 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.lifecycle.Lifecycle
 import androidx.viewpager2.adapter.FragmentStateAdapter
-import pe.edu.idat.appmastercine.BebidaFragment
-import pe.edu.idat.appmastercine.GolosinaFragment
+import pe.edu.idat.appmastercine.ComboFragment
 import pe.edu.idat.appmastercine.SnackFragment
 
 class FragmentPageAdapter(
@@ -13,14 +12,13 @@ class FragmentPageAdapter(
     lifecycle: Lifecycle) :
     FragmentStateAdapter(fragmentManager, lifecycle) {
     override fun getItemCount(): Int {
-        return 3
+        return 2
     }
+
     override fun createFragment(position: Int): Fragment {
         return if (position == 0)
-            GolosinaFragment()
-        else if (position == 1)
-            SnackFragment()
+            ComboFragment()
         else
-            BebidaFragment()
+            SnackFragment()
     }
 }

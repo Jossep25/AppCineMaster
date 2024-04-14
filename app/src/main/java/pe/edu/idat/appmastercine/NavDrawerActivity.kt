@@ -1,6 +1,7 @@
 package pe.edu.idat.appmastercine
 
 import android.annotation.SuppressLint
+import android.content.Intent
 import android.os.Bundle
 import android.view.MenuItem
 import android.widget.Toast
@@ -44,10 +45,15 @@ class NavDrawerActivity : AppCompatActivity(), NavigationView.OnNavigationItemSe
             R.id.nav_home -> replaceFragment(HomeFragment())
             R.id.nav_profile -> replaceFragment(ProfileFragment())
             R.id.nav_product -> replaceFragment(ProductFragment())
-            R.id.nav_logout -> Toast.makeText(this, "Logout", Toast.LENGTH_SHORT).show()
+            R.id.nav_logout -> logout() 
         }
         drawerLayout.closeDrawer(GravityCompat.START)
         return true
+    }
+    private fun logout() {
+        val intent = Intent(this, MainActivity::class.java)
+        startActivity(intent)
+        finish()
     }
 
     private fun replaceFragment (fragment: Fragment) {

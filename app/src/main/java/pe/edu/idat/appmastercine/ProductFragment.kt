@@ -30,9 +30,8 @@ class ProductFragment : Fragment() {
 
         adapter = FragmentPageAdapter(requireActivity().supportFragmentManager,lifecycle)
 
-        tabLayout.addTab(tabLayout.newTab().setText("Golosina"))
+        tabLayout.addTab(tabLayout.newTab().setText("Combos"))
         tabLayout.addTab(tabLayout.newTab().setText("Snack"))
-        tabLayout.addTab(tabLayout.newTab().setText("Bebida"))
 
         viewPager2.adapter = adapter
         tabLayout.isTabIndicatorFullWidth = true
