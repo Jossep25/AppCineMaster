@@ -2,16 +2,13 @@ package pe.edu.idat.appmastercine
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.os.Parcelable
 import android.view.View
 import android.widget.ImageButton
 import android.widget.ImageView
+import android.widget.LinearLayout
 import android.widget.TextView
-import android.widget.Toast
-import androidx.databinding.DataBindingUtil
 import com.bumptech.glide.Glide
 import pe.edu.idat.appmastercine.classCard.Pelicula
-import pe.edu.idat.appmastercine.databinding.ActivityCardDetailBinding
 
 class CardDetailActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -19,6 +16,10 @@ class CardDetailActivity : AppCompatActivity() {
         setContentView(R.layout.activity_card_detail)
         val ibRegresar: ImageButton = findViewById(R.id.ibRegresar)
         ibRegresar.setOnClickListener {
+            finish()
+        }
+        val linearLayout = findViewById<LinearLayout>(R.id.ln1)
+        linearLayout.setOnClickListener {
             finish()
         }
         val pelicula: Pelicula = intent.getParcelableExtra("pelicula")!!
