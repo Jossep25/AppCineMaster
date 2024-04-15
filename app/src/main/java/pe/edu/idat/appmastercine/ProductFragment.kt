@@ -27,12 +27,9 @@ class ProductFragment : Fragment() {
         //Buscar por id
         tabLayout = view.findViewById(R.id.tabLayout)
         viewPager2 = view.findViewById(R.id.viewPager2)
-
         adapter = FragmentPageAdapter(requireActivity().supportFragmentManager,lifecycle)
-
         tabLayout.addTab(tabLayout.newTab().setText("Combos"))
         tabLayout.addTab(tabLayout.newTab().setText("Snack"))
-
         viewPager2.adapter = adapter
         tabLayout.isTabIndicatorFullWidth = true
 

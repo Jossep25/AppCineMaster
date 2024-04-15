@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <ImageView
+                android:layout_width="395dp"
+                android:layout_height="240dp"
+                android:layout_marginBottom="25dp"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/cine_logo_desc"
+                android:padding="4dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_cine_logo" />
+
+            <TextView
+                android:id="@+id/txtTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="La magia del cine en Perú"
+                android:textSize="24sp"
+                android:textColor="#D81B60"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#D81B60"
+                android:layout_marginBottom="24dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sobre nosotros"
+                android:textSize="20sp"
+                android:textColor="#000000"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/descripcion"
+                android:textColor="#000000"
+                android:layout_marginBottom="24dp"/>
+
+            <!-- Nuestras Sedes -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nuestras Sedes"
+                android:textSize="20sp"
+                android:textColor="#000000"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/sedes"
+                android:textColor="#000000"
+                android:layout_marginBottom="24dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Próximos Estrenos"
+                android:textSize="20sp"
+                android:textColor="#000000"
+                android:layout_marginBottom="8dp"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginBottom="24dp"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/estrenos_desc"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_proximos_estrenos" />
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -21,6 +21,10 @@
             android:id="@+id/nav_product"
             android:icon="@drawable/shopping_cart_icon_icons_com_72552"
             android:title="Productos" />
+        <item
+            android:id="@+id/nav_quienessomos"
+            android:icon="@drawable/baseline_connect_without_contact_24"
+            android:title="Quienes somos?" />
 
 
     </group>
