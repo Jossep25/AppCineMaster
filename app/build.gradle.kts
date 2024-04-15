@@ -72,5 +72,7 @@ dependencies {
     annotationProcessor("com.github.bumptech.glide:compiler:4.12.0")
     //Picasso
     implementation("com.squareup.picasso:picasso:2.8")
+    //Lotti
+    implementation("com.airbnb.android:lottie:3.7.0")
 
 }

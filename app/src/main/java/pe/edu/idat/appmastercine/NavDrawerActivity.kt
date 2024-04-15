@@ -1,5 +1,6 @@
 package pe.edu.idat.appmastercine
 
+import android.app.AlertDialog
 import android.content.Intent
 import android.os.Bundle
 import android.view.MenuItem
@@ -54,9 +55,19 @@ class NavDrawerActivity : AppCompatActivity(), NavigationView.OnNavigationItemSe
     }
 
     private fun logout() {
-        val intent = Intent(this, MainActivity::class.java)
-        startActivity(intent)
-        finish()
+        val builder = AlertDialog.Builder(this)
+        builder.setMessage("¿Deseas cerrar sesión?")
+        builder.setPositiveButton("Si") { dialog, _ ->
+            dialog.dismiss()
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
+        builder.setNegativeButton("No") { dialog, _ ->
+            dialog.dismiss()
+        }
+        val dialog = builder.create()
+        dialog.show()
     }
 
     private fun replaceFragment(fragment: Fragment) {
