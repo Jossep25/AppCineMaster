@@ -1,4 +1,4 @@
-package pe.edu.idat.appmastercine.classCard
+package pe.edu.idat.appmastercine.model
 import android.os.Parcel
 import android.os.Parcelable
 data class Pelicula(

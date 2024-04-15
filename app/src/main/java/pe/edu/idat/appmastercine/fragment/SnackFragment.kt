@@ -13,8 +13,8 @@ import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ValueEventListener
-import pe.edu.idat.appmastercine.classCard.Snack
-import pe.edu.idat.appmastercine.classCard.SnackAdapter
+import pe.edu.idat.appmastercine.model.Snack
+import pe.edu.idat.appmastercine.AdapterCard.SnackAdapter
 import pe.edu.idat.appmastercine.databinding.FragmentSnackBinding
 
 class SnackFragment : Fragment() {
@@ -33,7 +33,7 @@ class SnackFragment : Fragment() {
         snackAdapter = SnackAdapter(snacks)
         recyclerView.adapter = snackAdapter
 
-        recyclerView.layoutManager = GridLayoutManager(requireContext(), 2)
+        recyclerView.layoutManager = GridLayoutManager(requireContext(), 1)
 
         return binding.root
     }

@@ -8,7 +8,7 @@ import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.TextView
 import com.bumptech.glide.Glide
-import pe.edu.idat.appmastercine.classCard.Pelicula
+import pe.edu.idat.appmastercine.model.Pelicula
 
 class CardDetailActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

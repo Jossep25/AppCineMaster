@@ -13,8 +13,8 @@ import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ValueEventListener
-import pe.edu.idat.appmastercine.classCard.CardAdapter
-import pe.edu.idat.appmastercine.classCard.Pelicula
+import pe.edu.idat.appmastercine.AdapterCard.CardAdapter
+import pe.edu.idat.appmastercine.model.Pelicula
 import pe.edu.idat.appmastercine.databinding.FragmentHomeBinding
 
 class HomeFragment : Fragment() {

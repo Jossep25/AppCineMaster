@@ -1,4 +1,4 @@
-package pe.edu.idat.appmastercine.classCard
+package pe.edu.idat.appmastercine.AdapterCard
 
 import android.content.Intent
 import android.view.LayoutInflater
@@ -10,6 +10,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import pe.edu.idat.appmastercine.CardDetailSnacks
 import pe.edu.idat.appmastercine.R
+import pe.edu.idat.appmastercine.model.Snack
 
 class SnackAdapter(private var snacks: List<Snack>) : RecyclerView.Adapter<SnackAdapter.SnackViewHolder>() {
     inner class SnackViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {

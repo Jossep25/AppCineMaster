@@ -3,7 +3,9 @@ package pe.edu.idat.appmastercine
 import android.app.AlertDialog
 import android.content.Intent
 import android.os.Bundle
+import android.view.LayoutInflater
 import android.view.MenuItem
+import android.widget.TextView
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.widget.Toolbar
@@ -11,6 +13,7 @@ import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentTransaction
+import com.airbnb.lottie.LottieAnimationView
 import com.google.android.material.navigation.NavigationView
 import pe.edu.idat.appmastercine.fragment.HomeFragment
 import pe.edu.idat.appmastercine.fragment.ProductFragment
@@ -55,25 +58,28 @@ class NavDrawerActivity : AppCompatActivity(), NavigationView.OnNavigationItemSe
     }
 
     private fun logout() {
+        val dialogView = LayoutInflater.from(this).inflate(R.layout.dialog_cerrar, null)
+        val animationView = dialogView.findViewById<LottieAnimationView>(R.id.animationView)
+        val messageTextView = dialogView.findViewById<TextView>(R.id.txtCerrar)
+        animationView.setAnimation("warning.json")
+        animationView.playAnimation()
+        messageTextView.text = "¿Deseas cerrar sesión?"
         val builder = AlertDialog.Builder(this)
-        builder.setMessage("¿Deseas cerrar sesión?")
-        builder.setPositiveButton("Si") { dialog, _ ->
-            dialog.dismiss()
-            val intent = Intent(this, MainActivity::class.java)
-            startActivity(intent)
-            finish()
-        }
-        builder.setNegativeButton("No") { dialog, _ ->
-            dialog.dismiss()
-        }
-        val dialog = builder.create()
-        dialog.show()
+        builder.setView(dialogView)
+            .setPositiveButton("Si") { dialog, _ ->
+                dialog.dismiss()
+                val intent = Intent(this, MainActivity::class.java)
+                startActivity(intent)
+                finish()
+            }
+            .setNegativeButton("No") { dialog, _ ->
+                dialog.dismiss()
+            }
+            .show()
     }
-
     private fun replaceFragment(fragment: Fragment) {
         val transaction: FragmentTransaction = supportFragmentManager.beginTransaction()
         transaction.replace(R.id.fragment_container, fragment)
         transaction.commit()
     }
-
 }

@@ -11,7 +11,7 @@ import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import com.bumptech.glide.Glide
-import pe.edu.idat.appmastercine.classCard.Snack
+import pe.edu.idat.appmastercine.model.Snack
 
 class CardDetailSnacks : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
