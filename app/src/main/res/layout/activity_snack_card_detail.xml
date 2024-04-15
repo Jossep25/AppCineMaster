@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/ln1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="8dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/ibRegresar"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="Back"
+                    android:scaleType="center"
+                    android:src="@drawable/baseline_arrow_back_ios_24"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Regresar"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:layout_marginStart="-14.5dp"/>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imViewSnack"
+                android:layout_width="match_parent"
+                android:layout_height="239dp"
+                android:layout_below="@id/ln1"
+                android:layout_marginTop="9dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/logo" />
+
+            <TextView
+                android:id="@+id/txtViewSnack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/imViewSnack"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="14dp"
+                android:layout_marginTop="18dp"
+                android:text="Producto"
+                android:textColor="#FF0000"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewSnackName"
+                android:layout_width="376dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtViewSnack"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="14dp"
+                android:text="Nombre del producto"
+                android:textColor="#8B8989"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtDscrip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewSnackName"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="14dp"
+                android:layout_marginTop="18dp"
+                android:text="Descripcion"
+                android:textColor="#FF0000"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewDescripcion"
+                android:layout_width="376dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtDscrip"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="14dp"
+                android:text="Descripcion del producto"
+                android:textColor="#8B8989"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewDescripcion"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="14dp"
+                android:layout_marginTop="18dp"
+                android:text="Precio"
+                android:textColor="#FF0000"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textViewPrecio"
+                android:layout_width="376dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/txtPrice"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="14dp"
+                android:text="0.0"
+                android:textColor="#8B8989"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="150dp"
+                android:layout_height="48dp"
+                android:layout_below="@id/textViewPrecio"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="30dp"
+                android:layout_marginVertical="100dp"
+                android:textColor="@color/white"
+                android:background="@drawable/border_button_ingresar"
+                android:text="Comprar"
+                android:textAllCaps="false"
+                android:textSize="18sp" />
+        </RelativeLayout>
+
+</RelativeLayout>
