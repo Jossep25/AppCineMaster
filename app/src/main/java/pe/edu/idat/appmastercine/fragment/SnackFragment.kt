@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.firebase.database.DataSnapshot
@@ -25,14 +26,18 @@ class SnackFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         binding = FragmentSnackBinding.inflate(inflater, container, false)
+
         recyclerView = binding.rviewSnacks
         recyclerView.layoutManager = LinearLayoutManager(requireContext())
         val snacks = obtenerSnacks()
         snackAdapter = SnackAdapter(snacks)
         recyclerView.adapter = snackAdapter
 
+        recyclerView.layoutManager = GridLayoutManager(requireContext(), 2)
+
         return binding.root
     }
+
     private fun obtenerSnacks(): List<Snack>{
         val db = FirebaseDatabase.getInstance().reference.child("Snack")
         val snacks = mutableListOf<Snack>()

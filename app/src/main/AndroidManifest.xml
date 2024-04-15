@@ -21,6 +21,9 @@
             android:name=".CardDetailActivity"
             android:exported="false" />
         <activity
+            android:name=".CardDetailSnacks"
+            android:exported="false" />
+        <activity
             android:name=".RegistrarUsuario"
             android:exported="false" />
         <activity
