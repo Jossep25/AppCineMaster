@@ -20,14 +20,23 @@ class MainActivity : AppCompatActivity() {
             val email = binding.edtCorreo.text.toString()
             val password = binding.edtPassword.text.toString()
             if (email.isNotEmpty() && password.isNotEmpty()) {
-                startActivity(Intent(this, NavDrawerActivity::class.java))
+                if (validarCredenciales(email, password)) {
+                    startActivity(Intent(this, NavDrawerActivity::class.java))
+                    finish()
+                } else {
+                    Toast.makeText(this, "Credenciales incorrectas", Toast.LENGTH_SHORT).show()
+                }
             } else {
                 Toast.makeText(this, "Por favor llena todos los campos", Toast.LENGTH_SHORT).show()
             }
         }
-
         binding.btnRegister.setOnClickListener {
             startActivity(Intent(this, RegistrarUsuario::class.java))
         }
+    }
+
+    private fun validarCredenciales(email: String, password: String): Boolean {
+
+        return true
     }
 }

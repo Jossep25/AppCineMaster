@@ -1,8 +1,10 @@
 package pe.edu.idat.appmastercine
 
+import android.app.AlertDialog
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
+import android.view.LayoutInflater
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
@@ -26,11 +28,23 @@ class ComprarActivity : AppCompatActivity() {
 
         edtNumeroTarjeta?.addTextChangedListener(CardNumberTextWatcher())
 
-        btnComprar?.setOnClickListener {
-            if (validarCampos()) {
-                Toast.makeText(this@ComprarActivity, "Compra exitosa", Toast.LENGTH_SHORT).show()
-            }
+        val buttonComprar = findViewById<Button>(R.id.btnComprar)
+        buttonComprar.setOnClickListener {
+            mostrarAlertaCompraExitosa()
         }
+    }
+
+    private fun mostrarAlertaCompraExitosa() {
+        val dialogView = LayoutInflater.from(this).inflate(R.layout.dialog_compra, null)
+        val builder = AlertDialog.Builder(this)
+            .setView(dialogView)
+            .setCancelable(false)
+        val dialog = builder.create()
+        dialogView.findViewById<Button>(R.id.buttonAceptar).setOnClickListener {
+            dialog.dismiss()
+            finish()
+        }
+        dialog.show()
     }
 
     private fun validarCampos(): Boolean {
