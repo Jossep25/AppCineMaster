@@ -1,4 +1,4 @@
-package pe.edu.idat.appmastercine
+package pe.edu.idat.appmastercine.fragment
 
 import android.os.Bundle
 import android.util.Log

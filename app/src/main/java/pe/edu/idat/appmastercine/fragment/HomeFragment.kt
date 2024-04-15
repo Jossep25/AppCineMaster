@@ -1,4 +1,4 @@
-package pe.edu.idat.appmastercine
+package pe.edu.idat.appmastercine.fragment
 
 import androidx.fragment.app.Fragment
 import android.os.Bundle
@@ -6,7 +6,6 @@ import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.firebase.database.DataSnapshot

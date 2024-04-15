@@ -16,7 +16,6 @@ class CardAdapter(private var peliculas: List<Pelicula>) : RecyclerView.Adapter<
         val textViewTitle: TextView = itemView.findViewById(R.id.textViewTitle)
         val imageView: ImageView = itemView.findViewById(R.id.imageView)
     }
-
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val view = LayoutInflater.from(parent.context).inflate(R.layout.card_layout, parent, false)
         return ViewHolder(view)

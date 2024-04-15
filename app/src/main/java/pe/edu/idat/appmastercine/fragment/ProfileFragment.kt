@@ -1,10 +1,11 @@
-package pe.edu.idat.appmastercine
+package pe.edu.idat.appmastercine.fragment
 
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import pe.edu.idat.appmastercine.R
 
 class ProfileFragment : Fragment() {
 

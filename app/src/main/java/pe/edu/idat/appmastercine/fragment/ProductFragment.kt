@@ -1,4 +1,4 @@
-package pe.edu.idat.appmastercine
+package pe.edu.idat.appmastercine.fragment
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.viewpager2.widget.ViewPager2
 import com.google.android.material.tabs.TabLayout
+import pe.edu.idat.appmastercine.R
 import pe.edu.idat.appmastercine.adapter.FragmentPageAdapter
 
 

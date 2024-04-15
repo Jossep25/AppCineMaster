@@ -5,7 +5,7 @@ import androidx.fragment.app.FragmentManager
 import androidx.lifecycle.Lifecycle
 import androidx.viewpager2.adapter.FragmentStateAdapter
 import pe.edu.idat.appmastercine.ComboFragment
-import pe.edu.idat.appmastercine.SnackFragment
+import pe.edu.idat.appmastercine.fragment.SnackFragment
 
 class FragmentPageAdapter(
     fragmentManager: FragmentManager,

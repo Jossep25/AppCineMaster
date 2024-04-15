@@ -11,6 +11,9 @@ import androidx.drawerlayout.widget.DrawerLayout
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentTransaction
 import com.google.android.material.navigation.NavigationView
+import pe.edu.idat.appmastercine.fragment.HomeFragment
+import pe.edu.idat.appmastercine.fragment.ProductFragment
+import pe.edu.idat.appmastercine.fragment.ProfileFragment
 
 class NavDrawerActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
 
