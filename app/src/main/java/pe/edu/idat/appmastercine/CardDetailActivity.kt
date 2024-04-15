@@ -32,13 +32,13 @@ class CardDetailActivity : AppCompatActivity() {
 
         Glide.with(this)
             ?.load(pelicula?.imagen_principal)
-            ?.override(500, 239)
+            ?.override(400, 239)
             ?.into(findViewById(R.id.imvPeli))
 
         if (!pelicula?.imagen_secundaria.isNullOrEmpty()) {
             Glide.with(this)
                 ?.load(pelicula?.imagen_secundaria)
-                ?.override(500, 239)
+                ?.override(400, 239)
                 ?.into(findViewById(R.id.imvPeli))
         } else {
             findViewById<ImageView>(R.id.imvPeli)?.visibility = View.GONE

@@ -44,7 +44,7 @@
             <ImageView
                 android:id="@+id/imvPeli"
                 android:layout_width="match_parent"
-                android:layout_height="239dp"
+                android:layout_height="230dp"
                 android:layout_below="@id/ln1"
                 android:layout_marginTop="9dp"
                 android:scaleType="centerCrop"
@@ -172,8 +172,8 @@
                 android:layout_below="@id/textViewCo2"
                 android:layout_alignParentEnd="true"
                 android:layout_marginTop="-25dp"
-                android:layout_marginEnd="106dp"
-                android:text="02/08/21"
+                android:layout_marginEnd="83dp"
+                android:text="02/08/2021"
                 android:textColor="#8B8989"
                 android:textSize="20sp"
                 android:textStyle="bold" />

@@ -47,8 +47,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="400dp"
                 android:layout_below="@id/ln2"
-                android:layout_marginTop="9dp"
                 android:layout_centerInParent="true"
+                android:layout_marginTop="9dp"
                 android:scaleType="centerCrop"
                 android:src="@drawable/logo" />
 
@@ -126,7 +126,6 @@
                 android:textColor="#8B8989"
                 android:textSize="20sp"
                 android:textStyle="bold" />
-
 
             <Button
                 android:id="@+id/button"
