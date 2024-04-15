@@ -1,0 +1,54 @@
+<!-- activity_comprar.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Agrega los campos del formulario de la tarjeta de crédito -->
+    <EditText
+        android:id="@+id/edtNumeroTarjeta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Número de tarjeta"
+        android:inputType="number"
+        android:maxLength="19"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/edtFechaVencimiento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Fecha de vencimiento (MM/YY)"
+        android:inputType="number"
+        android:maxLength="5"
+        android:layout_below="@id/edtNumeroTarjeta"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/edtCodigoSeguridad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Código de seguridad"
+        android:inputType="number"
+        android:maxLength="3"
+        android:layout_below="@id/edtFechaVencimiento"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/edtNombreTitular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombre del titular"
+        android:layout_below="@id/edtCodigoSeguridad"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Agrega el botón "Comprar" -->
+    <Button
+        android:id="@+id/btnComprar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edtNombreTitular"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:text="Comprar"/>
+
+</RelativeLayout>

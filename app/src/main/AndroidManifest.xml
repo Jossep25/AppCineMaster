@@ -26,6 +26,11 @@
         <activity
             android:name=".RegistrarUsuario"
             android:exported="false" />
+
+        <activity
+            android:name=".ComprarActivity"
+            android:exported="false" />
+
         <activity
             android:name=".MainActivity"
             android:exported="true"

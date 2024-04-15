@@ -211,6 +211,7 @@
                 android:layout_marginTop="90dp"
                 android:textColor="@color/white"
                 android:background="@drawable/border_button_ingresar"
+                android:onClick="Comprar"
                 android:text="Comprar"
                 android:textAllCaps="false"
                 android:textSize="18sp" />

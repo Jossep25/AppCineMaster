@@ -1,5 +1,6 @@
 package pe.edu.idat.appmastercine
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -43,5 +44,9 @@ class CardDetailActivity : AppCompatActivity() {
         } else {
             findViewById<ImageView>(R.id.imvPeli)?.visibility = View.GONE
         }
+    }
+    fun Comprar(view: View) {
+        val intent = Intent(this, ComprarActivity::class.java)
+        startActivity(intent)
     }
 }
