@@ -29,13 +29,13 @@ class CardDetailSnacks : AppCompatActivity() {
 
         Glide.with(this)
             ?.load(snack?.image)
-            ?.override(400,639)
+            ?.override(640,639)
             ?.into(findViewById(R.id.imViewSnack))
 
         if (!snack?.image.isNullOrEmpty()) {
             Glide.with(this)
                 ?.load(snack?.image)
-                ?.override(400,639)
+                ?.override(640,639)
                 ?.into(findViewById(R.id.imViewSnack))
         }else {
             findViewById<ImageView>(R.id.imViewSnack)?.visibility = View.GONE
