@@ -1,9 +1,8 @@
-<!-- activity_comprar.xml -->
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <!-- Agrega los campos del formulario de la tarjeta de crédito -->
+
     <EditText
         android:id="@+id/edtNumeroTarjeta"
         android:layout_width="match_parent"
@@ -41,7 +40,6 @@
         android:layout_below="@id/edtCodigoSeguridad"
         android:layout_marginTop="16dp"/>
 
-    <!-- Agrega el botón "Comprar" -->
     <Button
         android:id="@+id/btnComprar"
         android:layout_width="wrap_content"
