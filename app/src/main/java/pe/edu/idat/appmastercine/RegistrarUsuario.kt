@@ -1,5 +1,6 @@
 package pe.edu.idat.appmastercine
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -39,9 +40,11 @@ class RegistrarUsuario : AppCompatActivity() {
         val newUser = UserEntity(name, dni, email, password, fechaN)
         db.collection("users")
             .add(newUser)
-            .addOnSuccessListener {
+            .addOnSuccessListener { documentReference ->
                 Toast.makeText(this, "Registro exitoso", Toast.LENGTH_SHORT).show()
-                finish()
+                val intent = Intent(this, MainActivity::class.java)
+                intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK
+                startActivity(intent)
             }
             .addOnFailureListener { e ->
                 Toast.makeText(this, "Error al registrar los datos", Toast.LENGTH_SHORT).show()
