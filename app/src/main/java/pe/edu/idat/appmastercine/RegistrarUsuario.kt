@@ -32,7 +32,8 @@ class RegistrarUsuario : AppCompatActivity() {
         }
 
         binding.btnCancelar.setOnClickListener {
-            finish()
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
         }
     }
     private fun registrarUsuario(name: String, dni: String, email: String, password: String, fechaN: String) {
